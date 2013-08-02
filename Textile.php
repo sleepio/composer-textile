@@ -709,8 +709,6 @@ class Textile
 
         $out = "<$tag$atts>$content$end</$tag>";
 
-//      $this->dump($out);
-
         return $out;
 
     }
