@@ -2,7 +2,7 @@
 	"name": "sleepio/textile",
 	"description": "Sleepio textile php sdk mirror",
 	"type": "library",
-	"homepage": "https://sleepio@bitbucket.org/sleepio/composer-textile.git",
+	"homepage": "https://git@github.com:sleepio/composer-textile.git",
 	"autoload": {
 		"classmap": ["Textile.php"]
 	}
