@@ -953,8 +953,7 @@ class Textile
 // -------------------------------------------------------------
     function footnoteRef($text)
     {
-        return preg_replace('/\b\[([0-9]+)\](\s)?/Ue',
-            '$this->footnoteID(\'\1\',\'\2\')', $text);
+        return preg_replace_callback('/(?<=\S)\[([0-9]+)([\!]?)\](\s)?/U', array(&$this, 'footnoteID'), $text);
     }
 
 // -------------------------------------------------------------
